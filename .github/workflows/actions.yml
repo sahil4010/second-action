@@ -39,4 +39,4 @@ jobs:
       run: ls
     - name: publish js file name
       id: output-1
-      run: find dist/assets/*.js type f -exec echo 'this-output={}' >> $GITHUB OUTPUT ';'
+      run: find dist/assets/*.js type f -exec echo 'this-output={}' >> $GITHUB_OUTPUT ';'
