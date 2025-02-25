@@ -30,7 +30,7 @@ jobs:
           dist
           package.json
     - name: downlod artifact
-      uses: actions/download-artifact
+      uses: actions/download-artifact@v4
       with:
         name: dist-file
     - name: output artifact
