@@ -1,0 +1,9 @@
+name: output info
+on: [issue, workflow_dispatch]
+jobs:
+  info:
+    runs-on: ubuntu-latest
+    steps:
+    - name: info
+      run: echo "${{ toJSON(github) }}" # toJson is a function here and github is the context  
+      # of object type the info job
