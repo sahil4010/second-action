@@ -25,7 +25,13 @@ jobs:
     - name: artifact
       uses: actions/upload-artifact@v4
       with:
-        name: dist-files
+        name: dist-files     # this gives a zip file
         path: |
           dist
           package.json
+    - name: downlod artifact
+      uses: actions/download-artifact
+      with:
+        name: dist-file
+    - name: output artifact
+      run: ls
